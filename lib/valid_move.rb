@@ -2,7 +2,7 @@ board = [" "," "," "," "," "," "," "," "," "]
 
 
 def valid_move?(board, index)
-   if board[index] >= board[0] && board[index] <= board[8]
+   if board[index].to_i >= 0 && board[index].to_i <= 8
      true
    else
      false
